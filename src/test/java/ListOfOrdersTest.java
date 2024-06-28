@@ -6,11 +6,12 @@ import io.restassured.response.Response;
 import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.Test;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
 
-public class ListOfOrdersTest extends Constants {
+public class ListOfOrdersTest implements Constants {
 
     @Before
     public void setUp() {
@@ -18,9 +19,9 @@ public class ListOfOrdersTest extends Constants {
     }
 
     @DisplayName("Check value orders in list of orders")
-        @Description ("Проверка, что количество заказов, содержится в таблице заказов")
+    @Description("Проверка, что количество заказов, содержится в таблице заказов")
     @Test
-    public void testOrdersFieldInListOfOrders(){
+    public void testOrdersFieldInListOfOrders() {
         Response response = given()
                 .when()
                 .header("Content-type", "application/json")

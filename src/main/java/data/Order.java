@@ -8,7 +8,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Order extends Constants {
+public class Order implements Constants {
         private String firstName;
         private String lastName;
         private String address;
