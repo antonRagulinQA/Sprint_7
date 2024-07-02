@@ -10,7 +10,7 @@ import org.junit.Test;
 
 
 import static clients.CouriersClient.deleteAccount;
-import static data.Constants.*;
+import static data.Courier.*;
 import static org.hamcrest.Matchers.equalTo;
 
 

@@ -1,4 +1,3 @@
-import data.Constants;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
@@ -9,9 +8,9 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.notNullValue;
+import static data.Order.API_ORDER;
 
-
-public class ListOfOrdersTest implements Constants {
+public class ListOfOrdersTest {
 
     @Before
     public void setUp() {

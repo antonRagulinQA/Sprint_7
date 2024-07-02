@@ -10,13 +10,13 @@ import org.junit.Test;
 
 import static clients.CouriersClient.createAccount;
 import static clients.CouriersClient.deleteAccount;
-import static data.Constants.EXISTING_LOGIN;
-import static data.Constants.EXISTING_PASSWORD;
+
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static data.Courier.*;
 
-public class LoginCourierTest  {
+public class LoginCourierTest {
     @Before
     public void setUp() {
         RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru";
